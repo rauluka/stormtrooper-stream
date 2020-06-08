@@ -13,9 +13,11 @@ import static com.rauluka.stormtrooper.model.Planet.*;
 public class Main {
   private static final String RECRUITMENT_HEADQUARTERS_SPOUT_ID = "RecruitmentHeadquarters";
   private static final String TRAINING_DISPATCHER_BOLT_ID = "TrainingDispatcher";
+
   private static final String TATOOINE_MISSION_BOLT_ID = "TatooineTrainingMission";
   private static final String HOTH_MISSION_BOLT_ID = "HothTrainingMission";
   private static final String ENDOR_MISSION_BOLT_ID = "EndorTrainingMission";
+
   private static final String STORMTROOPER_MANAGEMENT_TOPOLOGY_NAME = "StormtrooperManagementTopology";
   private static final int TRAINING_MISSION_PARALLELISM_HINT = 1;
 

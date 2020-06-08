@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.UUID;
 
 /**
- * Every Stormtrooper achieved his academy grade and dreams about the terrain to patrol.
+ * Every Stormtrooper achieved his academy grade and dreams about the planet to patrol.
  */
 public class Stormtrooper implements Serializable {
   private static final long serialVersionUID = 8599735961527643794L;

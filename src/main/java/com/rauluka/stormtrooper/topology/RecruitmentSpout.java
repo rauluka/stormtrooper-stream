@@ -39,7 +39,7 @@ public class RecruitmentSpout implements IRichSpout {
 
   @Override
   public void declareOutputFields(OutputFieldsDeclarer outputFieldsDeclarer) {
-    outputFieldsDeclarer.declare(new Fields(FIELD_NAMES.STORMTROOPER_FIELD_NAME));
+    outputFieldsDeclarer.declare(new Fields(FieldNames.STORMTROOPER_FIELD_NAME));
   }
 
   @Override

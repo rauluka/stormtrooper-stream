@@ -36,12 +36,12 @@ public class TrainingDispatcherBolt implements IRichBolt {
     // Create an output stream of Stormtroopers for each planet.
     Arrays.stream(Planet.values())
         .forEach(planet ->
-            outputFieldsDeclarer.declareStream(planet.name(), new Fields(FIELD_NAMES.STORMTROOPER_FIELD_NAME)));
+            outputFieldsDeclarer.declareStream(planet.name(), new Fields(FieldNames.STORMTROOPER_FIELD_NAME)));
   }
 
   @Override
   public void execute(Tuple tuple) {
-    Stormtrooper stormtrooper = (Stormtrooper) tuple.getValueByField(FIELD_NAMES.STORMTROOPER_FIELD_NAME);
+    Stormtrooper stormtrooper = (Stormtrooper) tuple.getValueByField(FieldNames.STORMTROOPER_FIELD_NAME);
     Planet planet = assignTrainingPlanet(stormtrooper);
 
     outputCollector.emit(planet.name(), tuple, new Values(stormtrooper));

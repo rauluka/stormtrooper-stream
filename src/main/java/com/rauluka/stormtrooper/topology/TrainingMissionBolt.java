@@ -26,7 +26,7 @@ public class TrainingMissionBolt implements IRichBolt {
 
   @Override
   public void execute(Tuple tuple) {
-    Stormtrooper stormtrooper = (Stormtrooper) tuple.getValueByField(FIELD_NAMES.STORMTROOPER_FIELD_NAME);
+    Stormtrooper stormtrooper = (Stormtrooper) tuple.getValueByField(FieldNames.STORMTROOPER_FIELD_NAME);
     if (completeMission(stormtrooper)) {
       outputCollector.ack(tuple);
     } else {
